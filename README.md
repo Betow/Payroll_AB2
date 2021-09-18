@@ -6,7 +6,7 @@ Visual Studio Code
 Java JDK
 --------------------------------------------------------
 
-### Sistema de Folha de Pagamento
+## Sistema de Folha de Pagamento
 
 O objetivo do projeto é construir um sistema de folha de pagamento. O sistema consiste do gerenciamento de pagamentos dos empregados de uma empresa. Além disso, o sistema deve gerenciar os dados destes empregados, a exemplo os cartões de pontos. Empregados devem receber o salário no momento correto, usando o método que eles preferem, obedecendo várias taxas e impostos deduzidos do salário.
 
@@ -24,4 +24,18 @@ de salário fixo mais as comissões do período.
 * A folha de pagamento é rodada todo dia e deve pagar os empregados cujos salários vencem naquele dia. O sistema receberá a data até a qual o pagamento deve ser feito e calculará o pagamento para cada empregado desde a última vez em que este foi pago.
 
 
-## Refatoramento
+## Code Smells
+
+### Duplicated Code
+
+- Nas classes PayMenu e EmpMenu temos repetição da estrutura condicional.
+
+### Long Method
+
+- No método main da classe PayMenu;
+- No método addEmployee da classe EmpMenu.
+
+### Speculative Generality
+
+- Construtores vazios não usados;
+- Set e Get não utilizados;
